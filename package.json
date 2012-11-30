@@ -1,0 +1,21 @@
+{
+  "name": "tag",
+  "version": "0.0.0",
+  "description": "A markup helper.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R list test"
+  },
+  "repository": "",
+  "keywords": [
+    "markup",
+    "helper",
+    "tag"
+  ],
+  "author": "John Wright <johngeorge.wright@gmail.com>",
+  "license": "BSD",
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*"
+  }
+}
