@@ -649,7 +649,7 @@ describe('HeaderHtmlTag', function(){
 
 });
 
-describe('hgroup', function(){
+describe('HGroupHtmlTag', function(){
 
   var HGroupHtmlTag = require('../lib/html/hgroup');
 
@@ -659,20 +659,107 @@ describe('hgroup', function(){
 
 });
 
-describe('h', function(){
+var Header = require('../lib/html/h');
 
-  function h(level){
-    var Header = require('../lib/html/h');
-
+function h(level){
+  describe('H' + level + 'HtmlTag', function(){
     it('should be returned from the factory when asked for a "h" tag', function(){
       expect(HtmlTag.factory('h', {level : level})).to.be.a(Header);
     });
+  });
+}
 
-  }
+for(i=1; i<=6; i++){
+  h(i);
+}
 
-  for(i=1; i<=6; i++){
-    h(i);
-  }
+describe('HrHtmlTag', function(){
 
+  var HrTag = require('../lib/html/hr');
+  
+  it('should be returned from the factory when asked for a "hr" tag', function(){
+    expect(HtmlTag.factory('hr')).to.be.a(HrTag);
+  });
+
+});
+
+describe('HtmlHtmlTag', function(){
+  
+  var HtmlHtmlTag = require('../lib/html/html');
+  
+  it('should be returned from the factory when asked for a "html" tag.', function(){
+    expect(HtmlTag.factory('html')).to.be.a(HtmlHtmlTag);
+  });
+  
+});
+
+describe('IHtmlTag', function(){
+  
+  var IHtmlTag = require('../lib/html/i');
+  
+  it('should be returned from the factory when asked for an "i" tag', function(){
+    expect(HtmlTag.factory('i')).to.be.an(IHtmlTag);
+  });
+  
+});
+
+describe('IFrameHtmlTag', function(){
+  
+  var IFrameHtmlTag = require('../lib/html/iframe');
+  
+  it('should be returned from the factory when asked for an "iframe" tag', function(){
+    expect(HtmlTag.factory('iframe')).to.be.an(IFrameHtmlTag);
+  });
+  
+});
+
+describe('ImgHtmlTag', function(){
+  
+  var ImgHtmlTag = require('../lib/html/img');
+  
+  it('should be returned from the factory when asked for an "img" tag', function(){
+    expect(HtmlTag.factory('img')).to.be.an(ImgHtmlTag);
+  });
+  
+});
+
+describe('InputHtmlTag', function(){
+  
+  var InputHtmlTag = require('../lib/html/input');
+  
+  it('should be returned from the factory when asked for an "input" tag', function(){
+    expect(HtmlTag.factory('input')).to.be.an(InputHtmlTag);
+  });
+  
+});
+
+describe('InsHtmlTag', function(){
+  
+  var InsHtmlTag = require('../lib/html/ins');
+  
+  it('should be returned from the factory when asked for an "ins" tag', function(){
+    expect(HtmlTag.factory('ins')).to.be.an(InsHtmlTag);
+  });
+  
+});
+
+describe('KbdHtmlTag', function(){
+  
+  var KbdHtmlTag = require('../lib/html/kbd');
+  
+  it('should be returned from the factory when asked for a "kbd" tag', function(){
+    expect(HtmlTag.factory('kbd')).to.be.a(KbdHtmlTag);
+  });
+  
+});
+
+describe('KeyGenHtmlTag', function(){
+  
+  var KeyGenHtmlTag = require('../lib/html/keygen');
+  
+  it('should be returned from the factory when asked for a "keygen" tag', function(){
+    expect(HtmlTag.factory('keygen')).to.be.a(KeyGenHtmlTag);
+  });
+  
 });
 
