@@ -763,3 +763,83 @@ describe('KeyGenHtmlTag', function(){
   
 });
 
+describe('LabelHtmlTag', function(){
+
+  var LabelHtmlTag = require('../lib/html/label');
+
+  it('should be returned from the factory when asked for a "label" tag', function(){
+    expect(HtmlTag.factory('label')).to.be.a(LabelHtmlTag);
+  });
+
+});
+
+describe('LegendHtmlTag', function(){
+
+  var LegendHtmlTag = require('../lib/html/legend');
+
+  it('should be returned from the factory when asked for "legend" tag', function(){
+    expect(HtmlTag.factory('legend')).to.be.a(LegendHtmlTag);
+  });
+
+});
+
+describe('LiHtmlTag', function(){
+
+  var LiHtmlTag = require('../lib/html/li');
+
+  it('should be returned from the factory when asked for a "li" tag', function(){
+    expect(HtmlTag.factory('li')).to.be.a(LiHtmlTag);
+  });
+
+});
+
+describe('LinkHtmlTag', function(){
+
+  var LinkHtmlTag = require('../lib/html/link');
+
+  it('should be returned from the factory when asked for a "link" tag', function(){
+    expect(HtmlTag.factory('link')).to.be.a(LinkHtmlTag);
+  });
+
+});
+
+describe('MapHtmlTag', function(){
+
+  var MapHtmlTag = require('../lib/html/map');
+
+  it('should be returned from the factory when asked for a "map" tag', function(){
+    expect(HtmlTag.factory('map')).to.be.a(MapHtmlTag);
+  });
+
+});
+
+describe('MarkHtmlTag', function(){
+
+  var MarkHtmlTag = require('../lib/html/mark');
+
+  it('should be returned from the factory when asked for a "mark" tag', function(){
+    expect(HtmlTag.factory('mark')).to.be.a(MarkHtmlTag);
+  });
+
+});
+
+describe('MenuHtmlTag', function(){
+
+  var MenuHtmlTag = require('../lib/html/menu');
+
+  it('should be returned from the factoy when asked for "menu" tag', function(){
+    expect(HtmlTag.factory('menu')).to.be.a(MenuHtmlTag);
+  });
+
+});
+
+describe('MetaHtmlTag', function(){
+
+  var MetaHtmlTag = require('../lib/html/meta');
+
+  it('should be returned from the factory when asked for a "meta" tag', function(){
+    expect(HtmlTag.factory('meta')).to.be.a(MetaHtmlTag);
+  });
+
+});
+
