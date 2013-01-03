@@ -843,3 +843,83 @@ describe('MetaHtmlTag', function(){
 
 });
 
+describe('MeterHtmlTag', function(){
+
+  var MeterHtmlTag = require('../lib/html/meter');
+
+  it('should be returned from the factory when asked for a "meter" tag', function(){
+    expect(HtmlTag.factory('meter')).to.be.a(MeterHtmlTag);
+  });
+
+});
+
+describe('NavHtmlTag', function(){
+
+  var NavHtmlTag = require('../lib/html/nav');
+
+  it('should be returned from the factory when asked for a "nav" tag', function(){
+    expect(HtmlTag.factory('nav')).to.be.a(NavHtmlTag);
+  });
+
+});
+
+describe('NoFramesHtmlTag', function(){
+
+  var NoFramesHtmlTag = require('../lib/html/noframes');
+  
+  it('should be returned from the factory when asked for a "noframes" tag', function(){
+    expect(HtmlTag.factory('noframes')).to.be.a(NoFramesHtmlTag);
+  });
+
+});
+
+describe('NoScriptHtmlTag', function(){
+
+  var NoScriptHtmlTag = require('../lib/html/noscript');
+
+  it('should be returned from the factory when asked for a "noscript" tag', function(){
+    expect(HtmlTag.factory('noscript')).to.be.a(NoScriptHtmlTag);
+  });
+
+});
+
+describe('ObjectHtmlTag', function(){
+
+  var ObjectHtmlTag = require('../lib/html/object');
+
+  it('should be returned from the factory when asked for an "object" tag', function(){
+    expect(HtmlTag.factory('object')).to.be.an(ObjectHtmlTag);
+  });
+
+});
+
+describe('OlHtmlTag', function(){
+
+  var OlHtmlTag = require('../lib/html/ol');
+
+  it('should be returned from the factory when asked for an "ol" tag', function(){
+    expect(HtmlTag.factory('ol')).to.be.an(OlHtmlTag);
+  });
+
+});
+
+describe('OptGroupHtmlTag', function(){
+
+  var OptGroupHtmlTag = require('../lib/html/optgroup');
+
+  it('should be returned from the factory when asked foran "optgroup" tag', function(){
+    expect(HtmlTag.factory('optgroup')).to.be.an(OptGroupHtmlTag);
+  });
+
+});
+
+describe('OptonHtmlTag', function(){
+
+  var OptionHtmlTag = require('../lib/html/option');
+
+  it('should be returned from the factory when asked for an "option" tag', function(){
+    expect(HtmlTag.factory('option')).to.be.an(OptionHtmlTag);
+  });
+
+});
+
