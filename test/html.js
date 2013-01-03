@@ -923,3 +923,113 @@ describe('OptonHtmlTag', function(){
 
 });
 
+describe('OutputHtmlTag', function(){
+
+  var OutputHtmlTag = require('../lib/html/output');
+
+  it('should be returned from the factory when asked for an "output" tag', function(){
+    expect(HtmlTag.factory('output')).to.be.an(OutputHtmlTag);
+  });
+
+});
+
+describe('PHtmlTag', function(){
+
+  var PHtmlTag = require('../lib/html/p');
+
+  it('should be returned from the factory when asked for a "p" tag', function(){
+    expect(HtmlTag.factory('p')).to.be.a(PHtmlTag);
+  });
+
+});
+
+describe('ParamHtmlTag', function(){
+
+  var ParamHtmlTag = require('../lib/html/param');
+
+  it('should be returned from the factory when asked for a "param" tag', function(){
+    expect(HtmlTag.factory('param')).to.be.a(ParamHtmlTag);
+  });
+
+});
+
+describe('PreHtmlTag', function(){
+
+  var PreHtmlTag = require('../lib/html/pre');
+
+  it('should be returned from the factory when asked for a "pre" tag', function(){
+    expect(HtmlTag.factory('pre')).to.be.a(PreHtmlTag);
+  });
+
+});
+
+describe('ProgressHtmlTag', function(){
+
+  var ProgressHtmlTag = require('../lib/html/progress');
+
+  it('should be returned from the factory when asked for a "progress" tag', function(){
+    expect(HtmlTag.factory('progress')).to.be.a(ProgressHtmlTag);
+  });
+
+});
+
+describe('QHtmlTag', function(){
+
+  var QHtmlTag = require('../lib/html/q');
+
+  it('should be returned from the factory when asked for a "q" tag', function(){
+    expect(HtmlTag.factory('q')).to.be.a(QHtmlTag);
+  });
+
+});
+
+describe('RpHtmlTag', function(){
+
+  var RpHtmlTag = require('../lib/html/rp');
+
+  it('should be returned from the factory when asked for a "rp" tag', function(){
+    expect(HtmlTag.factory('rp')).to.be.a(RpHtmlTag);
+  });
+
+});
+
+describe('RtHtmlTag', function(){
+
+  var RtHtmlTag = require('../lib/html/rt');
+
+  it('should be returned from the factory when asked for a "rt" tag', function(){
+    expect(HtmlTag.factory('rt')).to.be.a(RtHtmlTag);
+  });
+
+});
+
+describe('RubyHtmlTag', function(){
+
+  var RubyHtmlTag = require('../lib/html/ruby');
+
+  it('should be returned from the factory when asked for a "ruby" tag', function(){
+    expect(HtmlTag.factory('ruby')).to.be.a(RubyHtmlTag);
+  });
+
+});
+
+describe('SHtmlTag', function(){
+
+  var SHtmlTag = require('../lib/html/s');
+
+  it('should be returned from the factory when asked for a "s" tag', function(){
+    expect(HtmlTag.factory('s')).to.be.a(SHtmlTag);
+  });
+
+});
+
+describe('SampHtmlTag', function(){
+
+  var SampHtmlTag = require('../lib/html/s');
+
+  it('should be returned from the factory when asked for a "s" tag', function(){
+    expect(HtmlTag.factory('s')).to.be.a(SampHtmlTag);
+  });
+
+});
+
