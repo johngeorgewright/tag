@@ -1025,10 +1025,10 @@ describe('SHtmlTag', function(){
 
 describe('SampHtmlTag', function(){
 
-  var SampHtmlTag = require('../lib/html/s');
+  var SampHtmlTag = require('../lib/html/samp');
 
-  it('should be returned from the factory when asked for a "s" tag', function(){
-    expect(HtmlTag.factory('s')).to.be.a(SampHtmlTag);
+  it('should be returned from the factory when asked for a "samp" tag', function(){
+    expect(HtmlTag.factory('samp')).to.be.a(SampHtmlTag);
   });
 
 });
