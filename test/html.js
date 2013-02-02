@@ -1033,3 +1033,133 @@ describe('SampHtmlTag', function(){
 
 });
 
+describe('ScriptHtmlTag', function(){
+
+  var ScriptHtmlTag = require('../lib/html/script');
+
+  it('should be returned from the factory when asked for a "script" tag', function(){
+    expect(HtmlTag.factory('script')).to.be.a(ScriptHtmlTag);
+  });
+
+});
+
+describe('SectionHtmlTag', function(){
+
+  var SectionHtmlTag = require('../lib/html/section');
+
+  it('should be returned from the factory when asked for a "section" tag', function(){
+    expect(HtmlTag.factory('section')).to.be.a(SectionHtmlTag);
+  });
+
+});
+
+describe('SelectHtmlTag', function(){
+
+  var SelectHtmlTag = require('../lib/html/select');
+
+  it('should be returned from the factory when asked for a "select" tag', function(){
+    expect(HtmlTag.factory('select')).to.be.a(SelectHtmlTag);
+  });
+
+});
+
+describe('SmallHtmlTag', function(){
+
+  var SmallHtmlTag = require('../lib/html/small');
+
+  it('should be returned from the factory when asked for a "small" tag', function(){
+    expect(HtmlTag.factory('small')).to.be.a(SmallHtmlTag);
+  });
+
+});
+
+describe('SourceHtmlTag', function(){
+
+  var SourceHtmlTag = require('../lib/html/source');
+
+  it('should be returned from the factory when asked for a "source" tag', function(){
+    expect(HtmlTag.factory('source')).to.be.a(SourceHtmlTag);
+  });
+
+});
+
+describe('SpanHtmlTag', function(){
+
+  var SpanHtmlTag = require('../lib/html/span');
+
+  it('should be returned from the factory when asked for a "span" tag', function(){
+    expect(HtmlTag.factory('span')).to.be.a(SpanHtmlTag);
+  });
+
+});
+
+describe('StrikeHtmlTag', function(){
+
+  var StrikeHtmlTag = require('../lib/html/strike');
+
+  it('should be returned from the factory when asked for a "strike" tag', function(){
+    expect(HtmlTag.factory('strike')).to.be.a(StrikeHtmlTag);
+  });
+
+});
+
+describe('StrongHtmlTag', function(){
+
+  var StrongHtmlTag = require('../lib/html/strong');
+
+  it('should be returned from the factory when asked for a "strong" tag', function(){
+    expect(HtmlTag.factory('strong')).to.be.a(StrongHtmlTag);
+  });
+
+});
+
+describe('StyleHtmlTag', function(){
+
+  var StyleHtmlTag = require('../lib/html/style');
+
+  it('should be returned from the factory when asked for a "style" tag', function(){
+    expect(HtmlTag.factory('style')).to.be.a(StyleHtmlTag);
+  });
+
+});
+
+describe('SubHtmlTag', function(){
+
+  var SubHtmlTag = require('../lib/html/sub');
+
+  it('should be returned from the factory when asked for a "sub" tag', function(){
+    expect(HtmlTag.factory('sub')).to.be.a(SubHtmlTag);
+  });
+
+});
+
+describe('SummaryHtmlTag', function(){
+
+  var SummaryHtmlTag = require('../lib/html/summary');
+
+  it('should be returned from the factory when asked for a "summary" tag', function(){
+    expect(HtmlTag.factory('summary')).to.be.a(SummaryHtmlTag);
+  });
+
+});
+
+describe('TableHtmlTag', function(){
+
+  var TableHtmlTag = require('../lib/html/table');
+
+  it('should be returned from the factory when asked for a "table" tag', function(){
+    expect(HtmlTag.factory('table')).to.be.a(TableHtmlTag);
+  });
+
+});
+
+describe('TBodyHtmlTag', function(){
+
+  var TBodyHtmlTag = require('../lib/html/tbody');
+
+  it('should be returned from the factory when asked for a "tbody" tag', function(){
+    expect(HtmlTag.factory('tbody')).to.be.a(TBodyHtmlTag);
+  });
+
+});
+
